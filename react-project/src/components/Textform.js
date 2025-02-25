@@ -77,7 +77,7 @@ export default function Textform(props) {
       <h1>{props.purpose}</h1>
         <div class="mb-3">
         <label for="exampleFormControlTextarea1" class="form-label" >Example textarea</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="10" value={text} onChange={handleOnChange} placeholder='Enter A Text' style={{background:props.mode === `light`?`white`:`grey `,color:props.mode === `light`?`white`:`black`}}></textarea>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="10" value={text} onChange={handleOnChange} placeholder='Enter A Text' style={{background:props.mode === `light`?`white`:`grey`,color:props.mode === `light`?`black`:`white`}}></textarea>
         </div>
         <button className="btn btn-primary mx-1" onClick={handleUpperCick} >Convert To UpperCase</button>
         <button className="btn btn-primary mx-1" onClick={handleLoCLick}>Convert To LowerCase</button>
