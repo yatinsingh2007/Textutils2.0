@@ -79,11 +79,11 @@ export default function Textform(props) {
         <label for="exampleFormControlTextarea1" class="form-label" >Example textarea</label>
         <textarea class="form-control" id="exampleFormControlTextarea1" rows="10" value={text} onChange={handleOnChange} placeholder='Enter A Text' style={{background:props.mode === `light`?`white`:`grey`,color:props.mode === `light`?`black`:`white`}}></textarea>
         </div>
-        <button className="btn btn-primary mx-1" onClick={handleUpperCick} >Convert To UpperCase</button>
-        <button className="btn btn-primary mx-1" onClick={handleLoCLick}>Convert To LowerCase</button>
-        <button className="btn btn-primary mx-1" onClick={handleClearCLick}>Clear Text</button>
-        <button className="btn btn-primary mx-1" onClick={handleInvrCLick}>Inverse-Case</button>
-        <button className="btn btn-primary mx-1" onClick={handleAltrCLick}>Alternting-Case</button>
+        <button className="btn btn-primary mx-1 my-1" onClick={handleUpperCick} >Convert To UpperCase</button>
+        <button className="btn btn-primary mx-1 my-1" onClick={handleLoCLick}>Convert To LowerCase</button>
+        <button className="btn btn-primary mx-1 my-1" onClick={handleClearCLick}>Clear Text</button>
+        <button className="btn btn-primary mx-1 my-1" onClick={handleInvrCLick}>Inverse-Case</button>
+        <button className="btn btn-primary mx-1 my-1" onClick={handleAltrCLick}>Alternting-Case</button>
       </div>
       <div className="conatiner my-3" style = {{color:props.mode === `light`?`black`:`white`}}>
         <h2>Your Text Summary</h2>
